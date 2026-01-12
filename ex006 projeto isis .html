@@ -1,60 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt - br">
+<html lang="pt-br">
 <head>
-  <link rel="shortcut icon" href="imagens-textes/apple-touch-icon.png" type="image/x-icon"> <!-- adiciona o icone de favoritos -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social</title>
+  <title>Apresentação</title>
   <style>
-    body{
-      background-color: rgb(129, 100, 156);
+    .container{
+      display: flex;   /* ativa flexbox */
+      height: 100vh;/* ocupa 100% do comprimento*/
+     
     }
-    h1{
-      font: 28pt arial;
+    .box{
+      width: 50%;
+      flex:1;/* libera a divisão da tela */
+      padding: 20px;
+      align-items: center; 
+      justify-content: center;
     }
-    hr{
-      border: none; /*tira a barra padrão */
-      height: 4px ;
-      background-color: black; /* cor da barra*/
-      margin: 0; /*tira da centralização*/
+    .esquerda{
+      background-color: rgb(100, 28, 100);
+      width: 50%; /*ocupa 50% da tela */
+      display: flex;
+      justify-content: center; 
+      
+
+      
+      
+     
+
     }
-    p{
-      font: normal 14pt arial;
-      width: 700px;  /*comprimento */
+    .esquerda p, h1 {
+      text-align: center;
+      justify-content: center;   /* centraliza verticalmente */
+      align-items: center;   /* centraliza horizontalmente */
+      display: flex;         /* ativa flexbox */
+      max-width: 80%;       /* limita largura para não ficar colado nas bordas */
+      line-height: 1.6;     /* espaçamento entre linhas */
+      flex-direction: column;   /*deixa um aparagrafo embaixo de outro*/
+      
     }
-    div#imagem img{ 
-      display: flex;   /*transforma o elemneto em um container flexivel, mais o correto é aplicar direto na div*/
-      align-items: center; /*só funciona em container flex, alinha os filhos verticalmente ao centro do container */
-      gap: 30px; /*define um espaço de 30px entre os filhos de um container flex*/
-      text-align: 0;
+    .esquerda  h1 {
+      text-align: center;
+     
+      align-items: center;   /* centraliza horizontalmente */
+      display: flex;         /* ativa flexbox */
+      max-width: 80%;       /* limita largura para não ficar colado nas bordas */
+      line-height: 1.6;     /* espaçamento entre linhas */
+      flex-direction: column;   /*deixa um aparagrafo embaixo de outro*/
     }
-    div#imagem p{
-      width: 1000px; /*nesse caso determina a largura do dos paragrafos, mais em geral determina os comprimentos*/
+    .direita{
+      width: 50%;
     }
+
   </style>
 </head>
 <body>
-  <h1>Minhas redes sociais</h1>
-  <hr> 
-   
-  <div id="imagem">
-    <img src="imagens-textes/isis500.jpeg" alt="" >
-    
-    <p>Quem sou eu ? <br> &nbsp; Eu sou a Ísis, tenho 20 anos e estou construindo minha trajetória em Marketing e Comércio Exterior. Desde cedo, sempre fui movida pela curiosidade e pela vontade de aprender — características que me levaram a explorar diferentes áreas e a buscar experiências que ampliem minha visão de mundo. 
-       <br>
-      &nbsp; Sou fluente em inglês, francês e espanhol, o que me permite dialogar com diferentes culturas e enxergar possibilidades além das fronteiras. Tenho como objetivo construir uma carreira internacional, conquistar independência financeira e realizar o sonho de morar em outro país, expandindo minhas experiências pessoais e profissionais.
-       <br>
-      &nbsp; A praia é meu lugar de inspiração, onde encontro equilíbrio e energia para seguir em frente. Minha fé e devoção também são parte essencial da minha jornada, guiando minhas escolhas e fortalecendo minha ambição de crescer e deixar uma marca positiva no mundo.
-      <p> 
+  <div class="container"> 
+    <div class="esquerda">
+      <h3>Impacto Marketing</h3>
       <br>
-  <div>
-      
- <p>Onde eu estou e onde quero chrgar ?</p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis expedita nihil, facere aliquam eveniet accusantium porro inventore corporis reprehenderit rerum architecto libero cupiditate fuga tenetur, nam minima sunt. Quae?
- <p>Atualmente faço estágio na Águas do Brasil, onde tenho contato direto com o ambiente corporativo e desenvolvo habilidades práticas em gestão e comunicação. Essa vivência me ajuda a unir teoria e prática, além de fortalecer minha capacidade de colaborar em projetos que exigem organização, dedicação e trabalho em equipe.
-  <br>
-  Mais do que uma estudante ou estagiária, me vejo como alguém que busca constantemente oportunidades de aprendizado e de conexão. Se você acredita em parcerias que unem dedicação, visão global e vontade de transformar, será um prazer conversar e construir algo juntos.
- </p>
+      <br>
+      <h1><strong>Conheça a Impacto Marketing</strong></h1>
+      <p><big><strong>Conheça a Impacto Marketing</strong></big>  somos especialistas em conectar marcas às pessoas certas, no momento certo.
+Com estratégias criativas, dados inteligentes e execução impecável, ajudamos sua empresa a crescer, engajar e vender mais.
 
+Marketing que gera valor. Comunicação que gera impacto.</p>
+    </div>
+    <div class="direita"></div>
+   </div>
+  
 </body>
 </html>
